@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Kanji Unlock</title>
+<style>
+  :root {
+    --bg: #141e2b;
+    --panel: #1c2938;
+    --ink: #f8fafc;
+    --muted: #9aa8b8;
+    --accent: #ff405a;
+    --rule: #2b3a4d;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f9fc;
+      --panel: #ffffff;
+      --ink: #16202c;
+      --muted: #5a6a7d;
+      --accent: #d8203c;
+      --rule: #dde4ec;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  .mark {
+    display: inline-flex; align-items: center; gap: .7rem;
+    font-weight: 700; letter-spacing: -.01em; font-size: 1.05rem;
+  }
+  .mark svg { display: block; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 1.1rem 0 .4rem; letter-spacing: -.02em; }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0; }
+  h2 {
+    font-size: 1.1rem; margin: 2.25rem 0 .6rem; letter-spacing: -.01em;
+    padding-left: .7rem; border-left: 3px solid var(--accent);
+  }
+  p, li { color: var(--ink); }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  code {
+    background: var(--panel); border: 1px solid var(--rule);
+    border-radius: 4px; padding: .1em .35em; font-size: .85em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  a { color: var(--accent); }
+  .lang {
+    display: flex; gap: .5rem; margin-top: 1.25rem; flex-wrap: wrap;
+  }
+  .lang a {
+    text-decoration: none; color: var(--muted);
+    border: 1px solid var(--rule); border-radius: 999px;
+    padding: .3rem .85rem; font-size: .85rem;
+  }
+  section { border-top: 1px solid var(--rule); margin-top: 3.5rem; padding-top: 2rem; }
+  section:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 3.5rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark">
+      <svg width="30" height="30" viewBox="0 0 108 108" aria-hidden="true">
+        <rect width="108" height="108" rx="24" fill="#2b3a4d"/>
+        <path d="M38 27 H70 V81 H38 Z" fill="none" stroke="#f8fafc" stroke-width="7.5" stroke-linejoin="round"/>
+        <path d="M38 54 H70" stroke="#ff405a" stroke-width="7.5" stroke-linecap="butt"/>
+      </svg>
+      Kanji Unlock
+    </div>
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 24 de julio de 2026</p>
+    <div class="lang">
+      <a href="#es">Español</a>
+      <a href="#en">English</a>
+    </div>
+  </header>
+
+  <section id="es">
+    <p>Kanji Unlock es una aplicación de repaso de kanji que funciona por completo
+    en tu dispositivo.</p>
+
+    <h2>Datos que recopilamos</h2>
+    <p>La aplicación <strong>no recopila datos de forma automática</strong>: no
+    incluye analíticas, publicidad ni SDKs de terceros, y no solicita cuenta ni
+    inicio de sesión. No hay ningún envío de información en segundo plano.</p>
+    <p>La <strong>única</strong> vez que la app transmite información por Internet
+    es cuando <strong>tú decides enviar un reporte</strong> de un problema desde un
+    reto (el botón de la bandera). En ese caso se envía solo lo necesario para
+    corregir el contenido:</p>
+    <ul>
+      <li>el kanji y el tipo de reto reportado,</li>
+      <li>la categoría y el mensaje que escribes,</li>
+      <li>la versión de la app, el modelo del dispositivo y la versión de Android.</li>
+    </ul>
+    <p>El reporte se envía al desarrollador (a través de un servicio de Google Apps
+    Script) con el único fin de arreglar errores en los datos de kanji. No se
+    recopila nada más, y nunca se envía nada sin que tú lo pidas. Si prefieres no
+    transmitir nada, puedes enviar el mismo reporte por tu propia app de correo.</p>
+
+    <h2>Datos que se guardan en tu dispositivo</h2>
+    <p>Tu progreso de estudio y tus preferencias se guardan localmente en el
+    almacenamiento privado de la app. Esta información nunca sale del dispositivo
+    y se elimina si desinstalas la aplicación.</p>
+
+    <h2>Permisos y su motivo</h2>
+    <ul>
+      <li><strong>Acceso a Internet</strong> (<code>INTERNET</code>): únicamente
+      para enviar un reporte cuando tú lo pides desde un reto. No se usa para nada
+      más.</li>
+      <li><strong>Mostrar sobre otras apps</strong>
+      (<code>SYSTEM_ALERT_WINDOW</code>): para dibujar el reto de kanji encima de
+      la pantalla al desbloquear.</li>
+      <li><strong>Servicio en primer plano</strong>
+      (<code>FOREGROUND_SERVICE</code>, <code>..._SPECIAL_USE</code>): para
+      detectar el desbloqueo y mostrar el reto.</li>
+      <li><strong>Notificaciones</strong> (<code>POST_NOTIFICATIONS</code>): solo
+      la notificación permanente que Android exige mientras el servicio está
+      activo.</li>
+      <li><strong>Iniciar al arrancar</strong>
+      (<code>RECEIVE_BOOT_COMPLETED</code>): para reactivar el servicio tras
+      reiniciar el teléfono.</li>
+      <li><strong>Wake lock</strong> (<code>WAKE_LOCK</code>): para presentar el
+      reto de forma fiable al desbloquear.</li>
+    </ul>
+    <p>Salvo el envío de reportes que tú inicias (descrito arriba), ninguno de
+    estos permisos se usa para recolectar ni transmitir información.</p>
+
+    <h2>Compras</h2>
+    <p>La compra que desbloquea los niveles N4 a N1 la procesa Google Play. La app
+    no recibe ni almacena datos de pago.</p>
+
+    <h2>Niños</h2>
+    <p>La app no está dirigida a menores de 13 años y no recopila datos de nadie.</p>
+
+    <h2>Cambios</h2>
+    <p>Si esta política cambia, se actualizará la fecha del encabezado.</p>
+
+    <h2>Contacto</h2>
+    <p><a href="mailto:alejoxbg@gmail.com">alejoxbg@gmail.com</a></p>
+  </section>
+
+  <section id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 24 July 2026</p>
+    <p>Kanji Unlock is a kanji review app that runs entirely on your device.</p>
+
+    <h2>Data we collect</h2>
+    <p>The app <strong>does not collect any data automatically</strong>: it
+    contains no analytics, no advertising and no third-party SDKs, and it does not
+    ask for an account or a login. Nothing is transmitted in the background.</p>
+    <p>The <strong>only</strong> time the app sends information over the Internet
+    is when <strong>you choose to send a report</strong> about a problem from a
+    challenge (the flag button). In that case it sends only what is needed to fix
+    the content:</p>
+    <ul>
+      <li>the kanji and the type of challenge reported,</li>
+      <li>the category and the message you write,</li>
+      <li>the app version, the device model and the Android version.</li>
+    </ul>
+    <p>The report goes to the developer (through a Google Apps Script service) for
+    the sole purpose of fixing errors in the kanji data. Nothing else is collected,
+    and nothing is ever sent unless you ask for it. If you prefer not to transmit
+    anything, you can send the same report from your own email app.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>Your study progress and preferences are stored locally in the app's private
+    storage. This information never leaves the device and is deleted if you
+    uninstall the app.</p>
+
+    <h2>Permissions and why they are needed</h2>
+    <ul>
+      <li><strong>Internet access</strong> (<code>INTERNET</code>): only to send a
+      report when you ask for it from a challenge. It is not used for anything
+      else.</li>
+      <li><strong>Display over other apps</strong>
+      (<code>SYSTEM_ALERT_WINDOW</code>): to draw the kanji challenge over the
+      screen when you unlock.</li>
+      <li><strong>Foreground service</strong> (<code>FOREGROUND_SERVICE</code>,
+      <code>..._SPECIAL_USE</code>): to detect the unlock and show the
+      challenge.</li>
+      <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>): only
+      the persistent notification Android requires while the service is
+      running.</li>
+      <li><strong>Start on boot</strong> (<code>RECEIVE_BOOT_COMPLETED</code>): to
+      re-enable the service after the phone restarts.</li>
+      <li><strong>Wake lock</strong> (<code>WAKE_LOCK</code>): to present the
+      challenge reliably on unlock.</li>
+    </ul>
+    <p>Other than the reports you initiate (described above), none of these
+    permissions is used to collect or transmit information.</p>
+
+    <h2>Purchases</h2>
+    <p>The purchase that unlocks levels N4 to N1 is processed by Google Play. The
+    app neither receives nor stores payment data.</p>
+
+    <h2>Children</h2>
+    <p>The app is not directed to children under 13 and collects no data from
+    anyone.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the date in the header will be updated.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:alejoxbg@gmail.com">alejoxbg@gmail.com</a></p>
+  </section>
+
+  <footer>
+    Kanji Unlock · com.alejoxbg.kanji
+  </footer>
+</main>
+</body>
+</html>
